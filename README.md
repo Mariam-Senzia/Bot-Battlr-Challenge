@@ -1,7 +1,7 @@
-### Bot Battlr
+# Bot Battlr
 Welcome to Bot Battlr, the ultimate platform in the known universe where you can assemble your own Bot Army! This React application empowers you to browse through a catalog of powerful robots, view their details, and enlist them into your formidable army.
 
-### Instructions
+# Instructions
 Follow these steps to set up the project and get started:
 
 -Clone this repository to your local machine.
@@ -13,17 +13,17 @@ Follow these steps to set up the project and get started:
 -Start the backend server by running json-server --watch db.json.
 -Test your server by visiting http://localhost:8001/bots in your browser.
 
-### Core Features
-# Bot Collection
+# Core Features
+## Bot Collection
 -Browse through profiles of all available bots.
 -Click on a bot to view its details.
 
-# Your Bot Army
+## Your Bot Army
 -Enlist a bot into your army by clicking on it. The selected bot will appear in the Your Bot Army section.
 -Release a bot from your army by clicking on it. The bot will be removed from the Your Bot Army section.
 -Permanently discharge a bot from service by clicking the red "x" button. This action deletes the bot from both the backend and the Your Bot Army section.
 
-# API Endpoints
+## API Endpoints
 GET /bots
 Example Response:
 
