@@ -1,5 +1,24 @@
 #header {
   text-align: center;
   background-color:  #00BFFF;
-  padding: 0.1rem;
+}
+
+#army {
+  background-color: #CCE5FF;
+  height: 55vh;
+}
+
+.botList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 25px; 
+}
+
+img{
+  height: 180px;
+  width: 180px
+}
+
+button {
+  background-color:  #00BFFF;
 }
