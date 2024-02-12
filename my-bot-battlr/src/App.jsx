@@ -15,7 +15,14 @@ function App() {
     },[]);
 
     function handleAdd(bot) {
-      setAddBot([...addBot,bot])
+      const botExists = addBot.includes(bot);
+      if (!botExists){
+      setAddBot([...addBot,bot]);
+      }
+    }
+
+    function handleDelete(){
+      alert("I am  a bot")
     }
   return (
     <div>
@@ -23,7 +30,7 @@ function App() {
         <h1>Welcome to <em>Bot Battlr</em></h1>
         <p>The one and only spot in the known universe where you can custom build your own Bot Army!</p>
       </header>
-      <YourBotArmy bots={addBot}/>
+      <YourBotArmy bots={addBot} handleDelete={handleDelete}/>
       <BotCollection bots={botList} handleClick={handleAdd}/>
     </div>
   );

@@ -16,12 +16,11 @@ function BotCollection({bots,handleClick}) {
                 <li >Updated at: {bot.updated_at}</li>     
             </ul>
             <button onClick={() => handleClick(bot)}>Add to army</button>
-
         </div>
     })
     
     return(
-        <div>
+        <div id="collection">
             <h4>Bot Collection:</h4>
             <div className="botList">
                 {allBots}

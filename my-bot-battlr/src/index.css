@@ -5,7 +5,8 @@
 
 #army {
   background-color: #CCE5FF;
-  height: 55vh;
+  height: 1500vh;
+  padding: 0.1rem
 }
 
 .botList {
@@ -21,4 +22,19 @@ img{
 
 button {
   background-color:  #00BFFF;
+}
+
+.x {
+  background-color: red;
+}
+
+#colllection {
+  float: left;
+  width: 40vh;
+
+}
+
+#army {
+  float:right;
+  width: 80vh;
 }
