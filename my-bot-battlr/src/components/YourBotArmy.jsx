@@ -1,6 +1,6 @@
 import React from "react";
 
-function YourBotArmy({bots,handleDelete}) {
+function YourBotArmy({bots,handleDelete,dischargeBot}) {
     const armyBots = bots.map((bot) => {
         return <div key={bot.name}>
             <img src={bot.avatar_url} id="botList" alt="Bot"/>
@@ -14,8 +14,8 @@ function YourBotArmy({bots,handleDelete}) {
                 <li >Health: {bot.health}</li>
                 <li >Updated at: {bot.updated_at}</li>     
             </ul>
-            <button onClick={handleDelete}>Remove from army</button>
-            <button className="x">x</button>
+            <button onClick={() => handleDelete(bot)}>Remove from army</button>
+            <button onClick={() => dischargeBot(bot)} className="x">x</button>
         </div>
     });
 
